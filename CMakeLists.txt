@@ -44,7 +44,7 @@ if(NOT DEFINED ONNXRUNTIME_DIR)
 
     if(WIN32)
         # Windows x86-64
-        set(ONNXRUNTIME_PREFIX "onnxruntime-win-x64-${ONNXRUNTIME_VERSION}")
+        set(ONNXRUNTIME_PREFIX "onnxruntime-win-x64-gpu-${ONNXRUNTIME_VERSION}")
         set(ONNXRUNTIME_EXT "zip")
     elseif (APPLE)
         if(CMAKE_SYSTEM_PROCESSOR STREQUAL x86_64)
